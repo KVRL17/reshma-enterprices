@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Home Section Styling */
+.home-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.home-text h1 {
+    color: #fffefe;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.home-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.home-btn {
+    padding: 10px 30px;
+    background-color: #264D2F;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #1f3f28;
+}
+
+/* Full Page Section */
+.page-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f0f0f0;
+    background-image: url("2.webp");
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between the cards */
+    width: 100%;
+    max-width: 800px;
+}
+
+/* General Card Styling */
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Section */
+.about-us-card h1 {
+    font-size: 2.5rem;
+    color: #264D2F; /* Dark green color */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-us-card p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Initially hidden text */
+.more-text {
+    display: none;
+}
+
+/* Mission Section */
+.mission-card h1 {
+    font-size: 2.5rem;
+    color: #264D2F;
+    text-align: center;
+}
+
+.mission-card p {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+/* Vision Section */
+.vision-card h1 {
+    font-size: 2.5rem;
+    color: #264D2F;
+    text-align: center;
+}
+
+.vision-card p {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+/* Read More Button */
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #264D2F; /* Dark green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.read-more-btn:hover {
+    background-color: #1f3f28; /* Slightly darker green on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .about-us-card h1,
+    .mission-card h1,
+    .vision-card h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-us-card p,
+    .mission-card p,
+    .vision-card p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-section {
+        padding: 10px;
+    }
+
+    .content-wrapper {
+        gap: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .about-us-card h1,
+    .mission-card h1,
+    .vision-card h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-us-card p,
+    .mission-card p,
+    .vision-card p {
+        font-size: 0.9rem;
+    }
+
+    .read-more-btn {
+        font-size: 0.9rem;
+    }
+}
