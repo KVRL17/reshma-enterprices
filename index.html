@@ -3,8 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reshma Enterprices</title>
+    <title>Reshma Enterprises</title>
     <link rel="stylesheet" href="styless.css">
+    <style>
+        /* Styles for the download button */
+        .download-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .download-button:hover {
+            background-color: darkgreen;
+        }
+
+        /* Container for page 14 to position the button */
+        .container-page14 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -59,8 +85,13 @@
         <img src="./page13.jpg" alt="page13" style="width: 100%; height: 100%;">
     </div>
 
-    <div class="container">
+    <!-- Page 14 with the download button -->
+    <div class="container container-page14">
         <img src="./page14.jpg" alt="page14" style="width: 100%; height: 100%;">
+        <!-- Download Button in the right bottom corner -->
+        <a href="path-to-your-file.pdf" download="ReshmaEnterprises_E-Catalog.pdf">
+            <button class="download-button">Download E-Catalog</button>
+        </a>
     </div>
 </body>
 </html>
